@@ -15,7 +15,7 @@ header {
 
 .logo {
     position: absolute;
-    top: 20px;
+    top: 5px;
     left: 20px;
     width: 100px;
     height: auto;
@@ -57,7 +57,7 @@ a:hover {
 /* Медиа-запросы для адаптивного дизайна */
 @media (max-width: 600px) {
     .logo {
-        width: 20px;
+        width: 100px;
     }
     
     h1 {
