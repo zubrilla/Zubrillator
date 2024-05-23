@@ -3,35 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Запуск программы на Паскале</title>
+    <title>Медицинский терминологический тест</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Программа на Паскале</h1>
-    <textarea id="code" rows="10" cols="50">program HelloWorld; begin writeln('Hello, world!'); end.</textarea><br>
-    <button onclick="runPascalProgram()">Запустить программу</button>
-    <pre id="output"></pre>
-
-    <script>
-        function runPascalProgram() {
-            const code = document.getElementById('code').value;
-            const data = {
-                language: 'pascal',
-                code: code
-            };
-            fetch('https://api.jdoodle.com/v1/execute', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(data),
-            })
-            .then(response => response.json())
-            .then(result => {
-                // Отобразить результат выполнения программы на странице
-                document.getElementById('output').innerText = result.output;
-            })
-            .catch(error => console.error('Error:', error));
-        }
-    </script>
+    <div id="output"></div>
+    <button id="startButton">Начать тест</button>
+    
+    <script src="script.js"></script>
 </body>
 </html>
