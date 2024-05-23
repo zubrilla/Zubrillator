@@ -1,7 +1,45 @@
-body {
-    font-family: Arial, sans-serif;
+let terms = []; // Массив терминов, полученных с сервера
+let currentIndex = 0; // Индекс текущего термина
+let questionsCount = 0; // Количество вопросов, заданных пользователю
+
+document.getElementById("checkButton").addEventListener("click", function() {
+    let userAnswer = document.getElementById("answerInput").value;
+    let correctAnswer = terms[currentIndex].translation;
+    
+    if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+        // Пользователь дал правильный ответ
+        currentIndex = getNextIndex();
+        displayTerm();
+    } else {
+        // Пользователь дал неправильный ответ
+        alert("Неправильный ответ. Правильный перевод: " + correctAnswer);
+    }
+});
+
+document.getElementById("nextButton").addEventListener("click", function() {
+    currentIndex = getNextIndex();
+    displayTerm();
+});
+
+function getNextIndex() {
+    questionsCount++;
+    if (questionsCount >= terms.length) {
+        // Пользователь ответил на все вопросы, сбросим счетчик
+        questionsCount = 0;
+    }
+    return Math.floor(Math.random() * terms.length);
 }
 
-#output {
-    margin-bottom: 10px;
+function displayTerm() {
+    document.getElementById("answerInput").value = "";
+    document.getElementById("output").innerText = terms[currentIndex].term;
 }
+
+// Получение терминов с сервера
+fetch("/terms")
+    .then(response => response.json())
+    .then(data => {
+        terms = data;
+        currentIndex = Math.floor(Math.random() * terms.length);
+        displayTerm();
+    });
