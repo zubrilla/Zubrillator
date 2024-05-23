@@ -52,3 +52,10 @@ a {
 a:hover {
     color: #0056b3;
 }
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+}
