@@ -1,54 +1,36 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+/* Стили для логотипа */
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px; /* Задайте ширину и высоту логотипа по вашему выбору */
+    height: auto;
 }
 
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
+/* Стили для заголовка */
 h1 {
-    text-align: center;
-    color: #333;
+    font-size: 24px;
+    color: #333; /* Цвет текста заголовка */
 }
 
-.link-list {
+/* Стили для списка приложений */
+ul {
     list-style-type: none;
     padding: 0;
 }
 
-.link-list li {
+li {
     margin-bottom: 10px;
 }
 
-.link-list li a {
-    display: block;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
+a {
     text-decoration: none;
-    border-radius: 4px;
-    text-align: center;
-    transition: background-color 0.3s ease;
+    color: #007bff; /* Цвет ссылок */
 }
 
-.link-list li a:hover {
-    background-color: #0056b3;
+a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Цвет ссылок при наведении */
 }
 
-.logo {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 50px; /* Размер логотипа */
-    height: auto;
-}
 
