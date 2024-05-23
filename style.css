@@ -1,45 +1,54 @@
-let terms = []; // Массив терминов, полученных с сервера
-let currentIndex = 0; // Индекс текущего термина
-let questionsCount = 0; // Количество вопросов, заданных пользователю
-
-document.getElementById("checkButton").addEventListener("click", function() {
-    let userAnswer = document.getElementById("answerInput").value;
-    let correctAnswer = terms[currentIndex].translation;
-    
-    if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
-        // Пользователь дал правильный ответ
-        currentIndex = getNextIndex();
-        displayTerm();
-    } else {
-        // Пользователь дал неправильный ответ
-        alert("Неправильный ответ. Правильный перевод: " + correctAnswer);
-    }
-});
-
-document.getElementById("nextButton").addEventListener("click", function() {
-    currentIndex = getNextIndex();
-    displayTerm();
-});
-
-function getNextIndex() {
-    questionsCount++;
-    if (questionsCount >= terms.length) {
-        // Пользователь ответил на все вопросы, сбросим счетчик
-        questionsCount = 0;
-    }
-    return Math.floor(Math.random() * terms.length);
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
 }
 
-function displayTerm() {
-    document.getElementById("answerInput").value = "";
-    document.getElementById("output").innerText = terms[currentIndex].term;
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Добавляем для позиционирования логотипа */
 }
 
-// Получение терминов с сервера
-fetch("/terms")
-    .then(response => response.json())
-    .then(data => {
-        terms = data;
-        currentIndex = Math.floor(Math.random() * terms.length);
-        displayTerm();
-    });
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.link-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.link-list li {
+    margin-bottom: 10px;
+}
+
+.link-list li a {
+    display: block;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.link-list li a:hover {
+    background-color: #0056b3;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px; /* Размер логотипа */
+    height: auto;
+}
+
