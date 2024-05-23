@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой первый сайт</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Запуск программы на Паскале</title>
 </head>
 <body>
-    <header>
-        <h1>Раньше здесь прикол, но вы опоздали,сосите хуй!!</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Обо мне</h2>
-            <p>Привет! Я учусь создавать веб-сайты.</p>
-        </section>
-    </main>
-    <footer>
-        <p>©hackerbogdawn228krutysh</p>
-    </footer>
+    <h1>Программа на Паскале</h1>
+    <button onclick="runPascalProgram()">Запустить программу</button>
+    <pre id="output"></pre>
+
+    <script>
+        function runPascalProgram() {
+            fetch('D:\Паскаль фпс\ZubrilatorLa2.1.exe') // Замените '/path/to/your/program.exe' на путь к вашей программе на сервере
+                .then(response => response.text())
+                .then(result => {
+                    // Отобразить результат выполнения программы на странице
+                    document.getElementById('output').innerText = result;
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
 </body>
 </html>
