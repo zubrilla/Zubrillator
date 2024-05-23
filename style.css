@@ -12,7 +12,7 @@ body {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative; /* Добавляем для позиционирования логотипа */
+    overflow: hidden; /* добавлено для "очистки" плавающих элементов */
 }
 
 h1 {
@@ -46,9 +46,8 @@ h1 {
 
 .logo {
     float: right;
-    top: 10px;
-    right: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
     width: 10px; /* Размер логотипа */
     height: auto;
 }
-
