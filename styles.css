@@ -57,7 +57,7 @@ a:hover {
 /* Медиа-запросы для адаптивного дизайна */
 @media (max-width: 600px) {
     .logo {
-        width: 80px;
+        width: 20px;
     }
     
     h1 {
