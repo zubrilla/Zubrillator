@@ -51,8 +51,14 @@ a:hover {
     color: #0056b3;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .logo {
-        display: none;
+        width: 50%; /* Уменьшение размера логотипа на планшетах */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 70%; /* Еще большее уменьшение размера логотипа на мобильных устройствах */
     }
 }
