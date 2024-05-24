@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zubrillator</title>
+    <link rel="stylesheet" href="stylesmobile.css">
+</head>
+<body>
+    <header>
+        <h1>Скачать Zubrillator</h1>
+    </header>
+    <main>
+        <ul>
+            <li><h4>Для использования Zubrillator на мобильных устройствах, вам необходимо скачать на свое устройство приложение <a href="https://apkpure.net/pascal-n-ide-editor-compiler/com.duy.pascal.compiler?ysclid=lwl66z7m1r678717502" target="_blank">Pascal N-IDE</a>.</h4></li>
+            <li><h4>Чтобы запустить программу, вам необходимо просто скопировать выданный вам на сайте текст и вставить его в программную строку в скачанном приложении.</h4></li>
+            <li><h2>Перечень программ:</h2></li>
+            <li><h3>Латынь</h3></li>
+            <li><a href="https://github.com/zubrilla/Zubrillator.mobile/raw/main/programs/La/Zubrilator%20La1.15.2.pas" target="_blank">Лексические минимумы</a></li>
+            <li><a download href="https://github.com/zubrilla/Zubrillator/raw/main/programs/La/%D0%9A%D0%BB%D0%B8%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D1%8B.zip">Клинические термины</a></li>
+            <li><a download href="https://github.com/zubrilla/Zubrillator/raw/main/programs/La/%D0%A0%D0%B5%D1%86%D0%B5%D0%BF%D1%82%D1%83%D1%80%D0%BD%D0%B0%D1%8F%20%D0%BB%D0%B5%D0%BA%D1%81%D0%B8%D0%BA%D0%B0.zip">Рецептурные термины</a></li>
+            <li><a download href="https://github.com/zubrilla/Zubrillator/raw/main/programs/La/%D0%90%D1%84%D0%BE%D1%80%D0%B8%D0%B7%D0%BC%D1%8B.zip">Афоризмы</a></li>
+            <li><h3>Английский язык</h3></li>
+            <li><a href="https://github.com/zubrilla/Zubrillator/blob/main/Zubrilator%La1.1.2.pas" target="_blank">Английский, слова для зачета</a></li>
+            <li><h3>Анатомия</h3></li>
+            <li><a download href="https://github.com/zubrilla/Zubrillator/raw/main/programs/An/%D0%9C%D1%8B%D1%88%D1%86%D1%8B%20%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D1%8B%20%D0%B8%20%D1%88%D0%B5%D0%B8.zip">Мышцы головы и шеи</a></li>
+            <li><h3>Для разработки</h3></li>
+            <li><a download href="https://github.com/zubrilla/Zubrillator/raw/main/programs/Pr/%D0%A4%D0%B0%D0%B9%D0%BB%D1%8B%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8.zip">Файлы для разработки</a></li>
+            <li><h5>Почта для обращений: <a href="mailto:zubrillator@mail.ru">zubrillator@mail.ru</a></h5></li>
+            <li><h6>Zubrilla team. Все права защищены.</h6></li>
+        </ul>
+    </main>
+</body>
+</html>
